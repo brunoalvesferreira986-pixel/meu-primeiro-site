@@ -1,25 +1,94 @@
-<html lang="pt-BR" data-theme="light" data-renderer="Doc"><head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="entrevista virtual" content="site do brunin">
-      <title>Aqui estou!</title>
-      <link rel="stylesheet" href="style.css">
-      
-  </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="entrevista virtual" content="site do brunin">
+  <title>Aqui estou!</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      position: relative;
+      background-color: rgb(255, 240, 199);
+    }
 
-  <body>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("Cars/chevettinho.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: hue-rotate(20deg) brightness(0.8) saturate(1.2);
+      opacity: 0.4; /* Ajuste a transparência aqui */
+      z-index: 0;
+    }
+
+    .conteudo {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1, p {
+      color: black;
+      z-index: 1;
+      position: relative;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 50px;
+      padding: 20px 50px;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background-color 0.5s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .botao-vermelho {
+      background-color: rgb(143, 0, 0);
+      color: white;
+    }
+
+    .botao-vermelho:hover {
+      background-color: rgb(190, 0, 0);
+    }
+
+    .botao-azul {
+      background-color: rgb(0, 0, 160);
+      color: white;
+    }
+
+    .botao-azul:hover {
+      background-color: rgb(102, 102, 255);
+    }
+  </style>
+</head>
+<body>
+  <div class="conteudo">
     <h1>Bem-vindo ao meu site!</h1>
     <p>Clique no link abaixo para me visitar pessoalmente??!</p>
 
-    <a href="https://www.google.com/maps/place/Monte+Everest/@27.9881564,86.9253667,15z/data=!3m1!4b1!4m6!3m5!1s0x39e854a215bd9ebd:0x576dcf806abbab2!8m2!3d27.9881569!4d86.9253667!16zL20vMGJsYmQ?entry=ttu&amp;g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    <a href="https://www.google.com/maps/place/Monte+Everest/@27.9881564,86.9253667,15z/data=!3m1!4b1!4m6!3m5!1s0x39e854a215bd9ebd:0x576dcf806abbab2!8m2!3d27.9881569!4d86.9253667!16zL20vMGJsYmQ?entry=ttu"
     target="_blank"
     class="botao-vermelho">Ir para a localização</a>
-      
+    
     <a href="https://www.istockphoto.com/br/vetor/ilha-do-tesouro-mapa-gm462586085-33042348" 
     target="_blank" 
-    class="botao-azul"> Ver o mapa</a>
-  
-  
-  </body>
+    class="botao-azul">Ver o mapa</a>
+  </div>
+</body>
+</html>
 
 </html>
